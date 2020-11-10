@@ -20,7 +20,17 @@ Route::get('/home', function () {
     dd(\Illuminate\Support\Facades\Auth::user());
 
 });
-//R//oute::post()
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/password-reset');
+
+//Route::post()
+
+Route::get('/users', 'UsersController@index');
+Route::get('/users/create', 'UsersController@create');
+Route::post('/users', 'UsersController@store');
+Route::get('/users/{id}', 'UsersController@show');
 
 
 
