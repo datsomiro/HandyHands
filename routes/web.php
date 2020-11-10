@@ -20,6 +20,11 @@ Route::get('/home', function () {
     dd(\Illuminate\Support\Facades\Auth::user());
 
 });
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/password-reset' ,)
+
 //R//oute::post()
 
 
