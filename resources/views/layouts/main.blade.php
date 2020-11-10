@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title ?? 'Welcome' }} | Laravel Books project</title>
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href='css/app.css'>
 </head>
 <body>
 
-
+<button>Logout</button>
 
     
 </body>
