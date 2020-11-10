@@ -22,5 +22,10 @@ Route::get('/home', function () {
 });
 //R//oute::post()
 
+Route::get('/users', 'UsersController@index');
+Route::get('/users/create', 'UsersController@create');
+Route::post('/users', 'UsersController@store');
+Route::get('/users/{id}', 'UsersController@show');
+
 
 
