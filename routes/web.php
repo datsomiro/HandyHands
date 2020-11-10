@@ -21,7 +21,11 @@ Route::get('/home', function () {
 
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
+Route::post('/login', 'AuthenticatedSessionController@create');
+Route::post('/register', 'RegisteredUserController@create');
+
+
 
 Route::post('/password-reset' , 'UserController@update');
 Route::post('/password-update' , 'UserController@update');

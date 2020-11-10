@@ -45,5 +45,7 @@ class UserController extends Controller
 
         Users::create($request->all());
         return redirect(action('UserController@show'));
+        
+
     }
 }

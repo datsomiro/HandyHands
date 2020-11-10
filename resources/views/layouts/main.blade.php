@@ -10,7 +10,28 @@
 </head>
 <body>
 
-<button>Logout</button>
+<form action="{{ route('logout') }}" method="post">
+
+    @csrf
+
+    <button>Logout</button>
+
+</form>
+
+<form action="{{ route('login') }}" method="post">
+
+    @csrf
+
+    <button>Login</button>
+
+</form>
+<form action="{{ route('register') }}" method="post">
+
+    @csrf
+
+    <button>Register</button>
+
+</form>
 
     
 </body>
