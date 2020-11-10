@@ -23,9 +23,9 @@ Route::get('/home', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/password-reset' ,)
+Route::post('/password-reset');
 
-//R//oute::post()
+//Route::post()
 
 
 
