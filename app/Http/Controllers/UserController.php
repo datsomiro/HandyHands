@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Users;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     public function index()
     {
@@ -44,6 +44,6 @@ class UsersController extends Controller
 
 
         Users::create($request->all());
-        return redirect(action('UsersController@index'));
+        return redirect(action('UserController@show'));
     }
 }

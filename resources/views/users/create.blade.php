@@ -10,7 +10,7 @@
     </div>
 @endif
 
-<form action="{{ action('UsersController@store') }}" method="POST">
+<form action="{{ action('UserController@store') }}" method="POST">
     @csrf
     <label for="first_name">First Name</label>
     <input type="text" name="first_name" id="first_name"/>

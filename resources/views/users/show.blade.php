@@ -23,5 +23,5 @@
 <br/>
 
 
-<a href="{{ action('UsersController@index') }}">Back to index</a>
+<a href="{{ action('UserController@index') }}">Back to index</a>
 

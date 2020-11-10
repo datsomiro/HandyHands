@@ -24,7 +24,7 @@
                         </div>
                         <p class="login-card-description">Reset Password</p>
                         
-                        <form method="POST" action="{{ route('password.Update') }}">
+                        <form method="POST" action="{{ route('password.update') }}">
                             @csrf
                             <input type="hidden" name="token" value="{{$request->route('token')}}">
                             <div class="form-group">
@@ -50,7 +50,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm password">
                             </div>
                             
-                            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Update">
+                            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="update">
                         </form>
                         <a href="#!" class="forgot-password-link">Forgot password?</a>
                         <p class="login-card-footer-text">Don't have an account? <a href="{{ route('register') }}" class="text-reset">Register here</a></p>
