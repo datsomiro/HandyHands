@@ -32903,8 +32903,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 __webpack_require__(/*! C:\Users\User\web\codingbootcamp\project\HandyHands\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Users\User\web\codingbootcamp\project\HandyHands\resources\scss\app.scss */"./resources/scss/app.scss");
-__webpack_require__(/*! C:\Web\handyhands\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Web\handyhands\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

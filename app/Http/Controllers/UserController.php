@@ -36,8 +36,8 @@ class UserController extends Controller
     {
 
         $user = new Users;
-        $user->first_name = $request->input('first_name');
-        $user->last_name = $request->input('last_name');
+        $user->firstname = $request->input('firstname');
+        $user->lastname = $request->input('lastname');
         $user->email = $request->input('email');
         $user->phone_number = $request->input('phone_number');
         $user->save();
