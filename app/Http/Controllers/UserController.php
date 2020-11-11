@@ -43,9 +43,11 @@ class UserController extends Controller
         $user->save();
 
 
-        Users::create($request->all());
+        Users::create($request);
+        //return view ('users.show');
         return redirect(action('UserController@show'));
         
+
 
     }
 }

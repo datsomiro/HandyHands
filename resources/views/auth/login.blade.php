@@ -5,7 +5,7 @@
         <div class="card login-card">
             <div class="row no-gutters">
                 <div class="col-md-5">
-                    <img src="/img/login.jpg" alt="login" class="login-card-img">
+                    <img src="{{ asset('img/hands.jpg') }}" alt="login" class="login-card-img">
                 </div>
                 <div class="col-md-7">
                     @if($errors->any())
@@ -20,7 +20,7 @@
                     @enderror
                     <div class="card-body">
                         <div class="brand-wrapper">
-                            <img src="/img/logo.png" alt="logo" class="logo">
+                            <img src="{{ asset('img/logo.png') }}" alt="logo" class="logo">
                         </div>
                         <p class="login-card-description">Sign into your account</p>
                         <form method="POST" action="{{ route('login') }}">

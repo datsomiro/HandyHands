@@ -34,8 +34,14 @@ Route::post('/password-update' , 'UserController@update');
 
 Route::get('/users', 'UserController@index');
 Route::get('/users/create', 'UserController@create');
+
+
 Route::post('/users', 'UserController@store');
 Route::get('/users/{id}', 'UserController@show');
+
+Route::post('/register', 'Auth\RegisterController@store')->middleware(['guest']);
+
+
 
 
 

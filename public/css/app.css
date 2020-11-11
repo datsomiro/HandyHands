@@ -10914,10 +10914,11 @@ body {
 
 .brand-wrapper {
   margin-bottom: 19px;
+  padding-left: 25%;
 }
 
 .brand-wrapper .logo {
-  height: 37px;
+  height: 6em;
 }
 
 .login-card {
