@@ -22,8 +22,8 @@ Route::get('/home', function () {
 });
 
 Route::get('/home', 'HomeController@index');
-Route::post('/login', 'AuthenticatedSessionController@create');
-Route::post('/register', 'RegisteredUserController@create');
+
+
 
 
 
