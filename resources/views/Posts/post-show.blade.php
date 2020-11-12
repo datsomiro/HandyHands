@@ -3,6 +3,7 @@
 @section('content')
  hello jellies
  
-<script src="{{ mix('js/userposts.js') }} "></script>
+<script src="{{ asset('js/userposts.js') }} "></script>
     
+
 @endsection

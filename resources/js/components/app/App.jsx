@@ -11,11 +11,11 @@ export default function App() {
     return (
         <Router>
 
-            <Header />
+          
 
             <main>
                 <Switch>
-                     <Route exact path="/post" children={ <textContent/> }/>
+    <Route exact path="/post" children= {<textContent/> }/>
                 </Switch>
             </main>
 
