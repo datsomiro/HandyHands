@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// Route::get('/', function () {
-//     return view('welcome');
+Route::get('/', function () {
+    return view('welcome');
 
 
-// // });
-// Route::get('/home', function () {
-//     dd(\Illuminate\Support\Facades\Auth::user());
-// });
+});
+Route::get('/home', function () {
+    dd(\Illuminate\Support\Facades\Auth::user());
+});
 
 Route::get('/home', 'HomeController@index');
 Route::get('/post', 'HomeController@ReactComponent')->name('single-post')->where('path','.*');
