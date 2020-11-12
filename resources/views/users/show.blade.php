@@ -17,11 +17,15 @@
 
 
 
-<a href="#">Delete</a>
-<br/>
-<a href="#">Edit Profile</a>
-<br/>
+<a href="{{ action('UserController@edit', [$users->id]) }}">Update</a>
 
+<a href="{{ action('UserController@delete', [$users->id]) }}">Delete</a>
+
+<form action="{{ action('UserController@destroy', [$users->id]) }}" method="POST">
+    @csrf
+    @method('DELETE')
+    <input type="submit" value="Delete without asking">
+</form>
 
 <a href="{{ action('UserController@index') }}">Back to index</a>
 
