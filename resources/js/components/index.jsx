@@ -1,11 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from "./app/App.jsx";
 
-function App(){
-    return (
-        <>
-  <h1>Hi </h1>
-        </>
-    )
-}
 
-ReactDOM.render(<App /> ,document.getElementById('app'));
+ReactDOM.render(
+                <App /> 
+                ,document.getElementById('app')
+   );

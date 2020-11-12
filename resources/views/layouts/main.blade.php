@@ -33,6 +33,8 @@
 
 </form>
 
+@yield('content')
+
     
 </body>
 </html>

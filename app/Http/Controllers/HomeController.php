@@ -15,4 +15,8 @@ class HomeController extends Controller
          //   ->with('success_message', 'user saved');
 
     }
+
+    public function ReactComponent(){
+        return view('Posts/post-show');
+    }
 }
