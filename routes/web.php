@@ -39,6 +39,12 @@ Route::get('/users/create', 'UserController@create');
 Route::post('/users', 'UserController@store');
 Route::get('/users/{id}', 'UserController@show');
 
+
+Route::get('/users/{id}/edit', 'UserController@edit');
+Route::put('/users/{id}', 'UserController@update');
+Route::get('/users/{id}/delete', 'UserController@delete'); // will show message "really want to delete?
+Route::delete('/users/{id}', 'UserController@destroy');
+
 Route::post('/register', 'Auth\RegisterController@store')->middleware(['guest']);
 
 

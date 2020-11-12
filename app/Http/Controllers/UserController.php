@@ -50,4 +50,40 @@ class UserController extends Controller
 
 
     }
+
+    public function edit($id)
+    {
+        $users = Users::findOrFail($id);
+
+        return view('users/edit', compact('users'));
+    }
+
+    public function update($id, Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|string|min:3|max:191',
+        ]);
+
+
+        $users = Users::findOrFail($id);
+        $users->update($request->all());
+
+        return redirect(action('UserController@index'));
+    }
+
+    public function delete($id)
+    {
+        $users = Users::findOrFail($id);
+
+        return view('categories/delete', compact('users'));
+    }
+
+    public function destroy($id)
+    {
+        $users = Users::findOrFail($id);
+
+        $users->delete();
+
+        return redirect(action('UserController@index'));
+    }
 }

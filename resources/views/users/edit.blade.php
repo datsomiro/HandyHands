@@ -15,6 +15,8 @@
 
     @method('PUT')
 
-    <input type="text" name="name" value="{{ $users->name }}"/>
+   
+    <input type="text" name="name" value="{{ $users->email }}"/>
+    
     <input type="submit" value="submit">
 </form>
