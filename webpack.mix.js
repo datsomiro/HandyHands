@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('dotenv').config(); 
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +12,29 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.options({
+    processCssUrls: false
+});
+
+
+if (!mix.inProduction()) {
+    mix.webpackConfig({
+        devtool: 'source-map'
+    })
+    .sourceMaps()
+}
+
+mix
+    .js('resources/js/app.js', 'public/js')
     .sass('resources/scss/app.scss', 'public/css')
-    .react('resources/js/components/index.jsx', 'public/js/userposts.js')
+    .react('resources/js/components/index.jsx', 'public/userposts.js')
+    .browserSync({
+        host: 'localhost',
+        port: 3000,
+        proxy: {
+            target: process.env.APP_URL
+        }
+    });
+
+// add versioning (creates mix.manifest.json)
+mix.version();

@@ -34300,19 +34300,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Post_TextContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Post/TextContent */ "./resources/js/components/app/Post/TextContent.jsx");
-/* harmony import */ var _Post_SelectCategory__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Post/SelectCategory */ "./resources/js/components/app/Post/SelectCategory.jsx");
-/* harmony import */ var _Post_Image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Post/Image */ "./resources/js/components/app/Post/Image.jsx");
+/* harmony import */ var _Post_textContent_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Post/textContent.jsx */ "./resources/js/components/app/Post/textContent.jsx");
+/* harmony import */ var _Post_selectCategory_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Post/selectCategory.jsx */ "./resources/js/components/app/Post/selectCategory.jsx");
+/* harmony import */ var _Post_Image_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Post/Image.jsx */ "./resources/js/components/app/Post/Image.jsx");
 
 
 
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post_Image__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post_SelectCategory__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/post",
-    children: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post_TextContent__WEBPACK_IMPORTED_MODULE_2__["default"], null)
+    children: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textContent", null)
   }))));
 }
 
@@ -34337,39 +34337,39 @@ function Image() {
 
 /***/ }),
 
-/***/ "./resources/js/components/app/Post/SelectCategory.jsx":
+/***/ "./resources/js/components/app/Post/selectCategory.jsx":
 /*!*************************************************************!*\
-  !*** ./resources/js/components/app/Post/SelectCategory.jsx ***!
+  !*** ./resources/js/components/app/Post/selectCategory.jsx ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SelectCategory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return selectCategory; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-function SelectCategory() {
+function selectCategory() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Please select the category that you need help with "));
 }
 
 /***/ }),
 
-/***/ "./resources/js/components/app/Post/TextContent.jsx":
+/***/ "./resources/js/components/app/Post/textContent.jsx":
 /*!**********************************************************!*\
-  !*** ./resources/js/components/app/Post/TextContent.jsx ***!
+  !*** ./resources/js/components/app/Post/textContent.jsx ***!
   \**********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TextContent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return textContent; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-function TextContent() {
+function textContent() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, " Description of the content in post "));
 }
 
@@ -34403,9 +34403,10 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\User\web\codingbootcamp\project\HandyHands\resources\js\components\index.jsx */"./resources/js/components/index.jsx");
+module.exports = __webpack_require__(/*! C:\Web\handyhands\resources\js\components\index.jsx */"./resources/js/components/index.jsx");
 
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=index.js.map
