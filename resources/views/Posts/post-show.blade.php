@@ -5,7 +5,7 @@
 
  <div id="app"></div>
  
-<script src="{{ asset('js/userposts.js') }} "></script>
+<script src="{{ ('/userposts.js') }} "></script>
     
 
 @endsection
