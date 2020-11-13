@@ -22,6 +22,8 @@ export default function App() {
                     <Switch>
         <Route exact path="/post" children= {<TextContent/> }/>
                     </Switch>
+
+
                 </main>
     
                 
