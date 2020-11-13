@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Header from '../Header/Header.jsx';
-import Footer from '../Footer/Footer.jsx';
-import Post from '../Post/Post.jsx';
-import Update from '../Update/Update.jsx';
-import Profile from '../Profile/Profile.jsx';
-import Logout from '../Logout/Logout.jsx';
+
+import Header from './Damian/Header/Header.jsx';
+import Footer from './Damian/Footer/Footer.jsx';
+import Update from './Damian/Update/Update.jsx';
+import Profile from './Damian/Profile/Profile.jsx';
+// import Logout from '../Logout/Logout.jsx.js';
+import Post from './Hilenn-comps/Post/Post';
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
                         <Route path="/post" children={<Post />} />
                         <Route path="/profile" children={<Profile />} />
                         <Route path="/update" children={<Update />} />
+                        <Route exact path="/post" children= {<TextContent/> }/>
                         <Route path="/" children={<Logout />} />
                     </Switch>
                 </main>

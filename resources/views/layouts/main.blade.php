@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
-<div class= "navbar-dark bg-primary d-flex ">
+
+{{-- <div class= "navbar-dark bg-primary d-flex ">
     
     <form action="{{ route('logout') }}" method="post">
     
@@ -35,64 +36,10 @@
         <button class="btn btn-warning" >Register</button>
     
     </form>
-</div>
+</div> --}}
 
-<<<<<<< HEAD
+<div id="app"></div> 
     @yield('content')
 
 </body>
 </html>
-{{--<form action="{{ route('logout') }}" method="post">
-
-    @csrf
-
-    <button>Logout</button>
-
-</form>
-
-<form action="{{ route('login') }}" method="post">
-
-    @csrf
-
-    <button>Login</button>
-
-</form>
-<form action="{{ route('register') }}" method="post">
-
-    @csrf
-
-    <button>Register</button>
-
-</form>
-
-    
-</body>
-</html>--}}
-{{--<form action="{{ route('logout') }}" method="post">
-
-    @csrf
-
-    <button>Logout</button>
-
-</form>
-
-<form action="{{ route('login') }}" method="post">
-
-    @csrf
-
-    <button>Login</button>
-
-</form>
-<form action="{{ route('register') }}" method="post">
-
-    @csrf
-
-    <button>Register</button>
-=======
->>>>>>> ca3873f973b866268656433567d99f77c31ee0ef
-
-@yield('content')
-
-    
-</body>
-</html>--}}
