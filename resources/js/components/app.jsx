@@ -7,7 +7,7 @@ import Footer from './Damian/Footer/Footer.jsx';
 import Update from './Damian/Update/Update.jsx';
 import Profile from './Damian/Profile/Profile.jsx';
 // import Logout from '../Logout/Logout.jsx.js';
-import Post from './Hilenn-comps/Post/Post';
+import Post from './Hilenn-comps/Post/Post.jsx';
 
 
 export default function App() {

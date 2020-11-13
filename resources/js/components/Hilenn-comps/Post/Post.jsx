@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-import '../../../../scss/PostComponent/postStyle.scss'
-import  Image from './Image';
+import Image from './SelectCategory.jsx';
+import Image from './TextContent.jsx';
+import Image from './Image.jsx';
+import '../../../../scss/PostComponent/postStyle.scss';
+
 
 export default function Post() {
     return(
@@ -14,6 +17,6 @@ export default function Post() {
          
               <TextContent/> 
     
-         </div>
+    </div>
      );
 }

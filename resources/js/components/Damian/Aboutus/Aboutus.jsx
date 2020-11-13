@@ -6,8 +6,8 @@ import Footer from '../Footer/Footer.jsx';
 
 export default function Aboutus() {
 
-    const [user, setUser] = useState(null);
-    const UserContext = createContext(user);
+    // const [user, setUser] = useState(null);
+    // const UserContext = createContext(user);
     
     return (
                 <div>
