@@ -9,13 +9,13 @@
     <link rel="stylesheet" href='css/app.css'>
 </head>
 <body>
-<div class="nav-bar">
+<div class= "navbar-dark bg-primary d-flex ">
     
     <form action="{{ route('logout') }}" method="post">
     
         @csrf
     
-        <button>Logout</button>
+        <button class="btn btn-warning" >Logout</button>
     
     </form>
     
@@ -23,14 +23,14 @@
     
         @csrf
     
-        <button>Login</button>
+        <button class="btn btn-warning" >Login</button>
     
     </form>
     <form action="{{ route('register') }}" method="post">
     
         @csrf
     
-        <button>Register</button>
+        <button class="btn btn-warning" >Register</button>
     
     </form>
 </div>
